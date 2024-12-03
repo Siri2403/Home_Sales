@@ -5,19 +5,16 @@
 This assignment dives in the home sales data and identifies certain key points on metrics like average price for various 
 bedrooms and the view rating.
 
-1. Churn Prediction: Identify customers likely to stop using the service.
-2. Revenue Forecasting: Predict future revenue based on historical transaction data.
+The dataset (home_sales_revised.csv) is processed using SparkSQL, and advanced features like caching and partitioning are
+utilized to optimize queries.
 
-Both tasks use supervised machine learning models and a structured approach to preprocessing, training, and evaluation.
+## Objectives
 
-### Project Objectives
-
-## Churn Prediction:
-
-1. Predict whether a customer will churn using classification algorithms.
-2. Provide actionable insights for retention strategies.
-
-## Revenue Forecasting:
-
-1. Predict revenue trends using regression models.
-2. Support strategic financial planning.
+1. Analyze home sales data using SparkSQL to answer the following questions:
+    Average price of four-bedroom houses sold per year.
+    Average price of three-bedroom, three-bathroom homes by year built.
+    Average price of three-bedroom, three-bathroom, two-floor homes with ≥ 2,000 sqft by year built.
+    Average home price per "view" rating where the price is ≥ $350,000.
+2. Optimize queries using caching and partitioning.
+3. Compare runtime performance for cached vs. uncached data.
+4. Save and query partitioned data stored in Parquet format.
